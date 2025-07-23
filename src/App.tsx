@@ -1,8 +1,8 @@
 import { Outlet } from "react-router-dom"
 import { NavLink } from 'react-router-dom';
-import Preload from "./components/Preload";
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
+import Preload2 from "./components/Preload2";
 
 const App = () => {
 
@@ -34,7 +34,7 @@ const App = () => {
   }, [Spinner]);
 
   if (Spinner) {
-    return <Preload />;
+    return <Preload2 />;
   }
 
   return (
@@ -67,7 +67,9 @@ const App = () => {
               ))}
             </ul>
           </aside>
-          <Outlet />
+          <section className="w-full p-5 h-full">
+            <Outlet />
+          </section>
         </div>
       </main>
     </>
