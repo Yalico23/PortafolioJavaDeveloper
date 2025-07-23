@@ -1,12 +1,13 @@
 import { Outlet } from "react-router-dom"
 import { NavLink } from 'react-router-dom';
 import Preload from "./components/Preload";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 
 const App = () => {
 
   const [Spinner, setSpinner] = useState(true);
+  const contenedorRef = useRef(null);
 
   const navItems = [
     { to: "/", label: "Inicio" },
@@ -23,20 +24,22 @@ const App = () => {
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    if (!Spinner && contenedorRef.current) {
+      gsap.fromTo(contenedorRef.current,
+        { opacity: 0, y: 30 },
+        { opacity: 1, y: 0, duration: 1.2, ease: "power2.out", delay: 0.1 }
+      );
+    }
+  }, [Spinner]);
+
   if (Spinner) {
     return <Preload />;
   }
 
-  gsap.from("#contenedor", {
-    duration: 1.5,
-    opacity: 0,
-    ease: "power2.inOut",
-    delay: 0.5,
-  });
-
   return (
     <>
-      <main id="contenedor">
+      <main id="contenedor" ref={contenedorRef} className="opacity-0">
         <div className="border-[1px] border-gray-300 flex gap-x-10 relative" id="app">
           <video
             autoPlay
