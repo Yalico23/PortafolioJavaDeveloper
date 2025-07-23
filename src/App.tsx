@@ -11,9 +11,10 @@ const App = () => {
 
   const navItems = [
     { to: "/", label: "Inicio" },
+    { to: "/habilidades", label: "Habilidades" },
     { to: "/proyectos", label: "Proyectos" },
     { to: "/experiencia", label: "Experiencia" },
-    { to: "/contactame", label: "Contáctame" },
+    { to: "/contactame", label: "Contáctame" }
   ];
 
   useEffect(() => {
