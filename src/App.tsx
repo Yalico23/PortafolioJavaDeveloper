@@ -11,7 +11,7 @@ const App = () => {
 
   const navItems = [
     { to: "/", label: "Inicio" },
-    { to: "/habilidades", label: "Habilidades" },
+    { to: "/habilidades", label: "Habilidades y Tecnologías" },
     { to: "/proyectos", label: "Proyectos" },
     { to: "/experiencia", label: "Experiencia" },
     { to: "/contactame", label: "Contáctame" }
@@ -54,7 +54,7 @@ const App = () => {
             <p className="font-[PT Sans] text-2xl">Java Developer</p>
             <ul className="mt-8 space-y-4">
               {navItems.map((item) => (
-                <li key={item.to} className="font-[Quicksand] cursor-pointer">
+                <li key={item.to} className="font-[Quicksand] cursor-pointer li">
                   <NavLink
                     to={item.to}
                     className={({ isActive }) =>
@@ -68,7 +68,7 @@ const App = () => {
               ))}
             </ul>
           </aside>
-          <section className="w-full p-5 h-full">
+          <section className="w-full p-5 h-full overflow-y-auto" id="section">
             <Outlet />
           </section>
         </div>
