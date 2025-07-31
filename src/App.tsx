@@ -41,7 +41,7 @@ const App = () => {
   return (
     <>
       <main id="contenedor" ref={contenedorRef} className="opacity-0">
-        <div className="border-[1px] border-gray-300 flex gap-x-10 relative" id="app">
+        <div className="border-[1px] border-gray-300 block md:flex gap-x-10 relative" id="app">
           <video
             autoPlay
             loop

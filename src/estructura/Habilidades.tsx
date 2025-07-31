@@ -153,13 +153,13 @@ const Habilidades: React.FC = () => {
         <div
           key={ti.nombre}
           ref={(el) => addToRefs(el, index)}
-          className="p-5 skill-item flex items-center gap-5"
+          className="p-5 skill-item md:flex items-center gap-5"
         >
-          <div className='w-[85%]'>
+          <div className='w-full md:w-[85%]'>
             <h2 className='text-2xl font-bold text-white'>{ti.nombre}</h2>
             <p>{ti.descripcion}</p>
           </div>
-          <img src={ti.img} alt={`img ${ti.nombre}`}  className='h-24'/>
+          <img src={ti.img} alt={`img ${ti.nombre}`}  className='h-24 mx-auto my-5'/>
         </div>
       ))}
     </div>
