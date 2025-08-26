@@ -29,6 +29,7 @@ const Proyectos = () => {
       ],
       video: "/projects/zonatech/elearning.mp4",
       github: "https://github.com/Yalico23/Zonatech-Evaluacion-Entrevista-Automatizadas",
+      arquitectura : "/projects/zonatech/arquitectura.jpg",
       imagenes: [
         {
           titulo: "Antiplagio de evaluaciones",
@@ -178,6 +179,17 @@ const Proyectos = () => {
                     </div>
                   </div>
                 )}
+
+                <div className="mb-8">
+                  <h3 className="text-xl font-semibold text-white mb-4 flex items-center">
+                    Arquitectura del Proyecto
+                  </h3>
+                  <img
+                    src={proyecto.arquitectura}
+                    alt="Arquitectura del Proyecto"
+                    className="w-full h-auto rounded-xl border border-white/10"
+                  />
+                </div>
 
                 {/* Action Buttons */}
                 <div className="flex flex-wrap gap-4">
