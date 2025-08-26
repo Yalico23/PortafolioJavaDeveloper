@@ -1,4 +1,4 @@
-import  { useState } from 'react';
+import { useState } from 'react';
 import { Github, ExternalLink, Code2, Database, Cloud, Shield, Cpu, Monitor, Server, Layers } from 'lucide-react';
 
 const Proyectos = () => {
@@ -6,13 +6,13 @@ const Proyectos = () => {
     titulo: string;
     url: string;
   };
-  
+
   const [selectedImage, setSelectedImage] = useState<Imagen | null>(null);
 
   const proyectos = [
     {
       titulo: "Sistema de E-learning en entrevistas y evaluaciones automatizadas con IA y servicios en la nube (En desarrollo)",
-      descripcion: "Desarrollo de un sistema de e-learning que utiliza inteligencia artificial para realizar entrevistas y evaluaciones automatizadas, integrando servicios en la nube para almacenamiento y procesamiento de datos.",
+      descripcion: "Desarrollo de un sistema de e-learning que utiliza inteligencia artificial para realizar entrevistas y evaluaciones automatizadas,usando un interprete de audio a texto de OpenAiWhisper, integrando servicios en la nube para almacenamiento y procesamiento de datos.",
       tecnologias: [
         { name: "React", icon: Monitor, color: "text-blue-400" },
         { name: "Spring Boot", icon: Server, color: "text-green-400" },
@@ -24,7 +24,8 @@ const Proyectos = () => {
         { name: "Spring Security", icon: Shield, color: "text-red-400" },
         { name: "Spring MVC", icon: Code2, color: "text-green-500" },
         { name: "Spring Data", icon: Server, color: "text-emerald-400" },
-        { name: "Clean Code", icon: Code2, color: "text-purple-500" }
+        { name: "Clean Code", icon: Code2, color: "text-purple-500" },
+        { name: "Whisper", icon: Code2, color: "text-purple-500" },
       ],
       video: "/projects/zonatech/elearning.mp4",
       github: "https://github.com/Yalico23/Zonatech-Evaluacion-Entrevista-Automatizadas",
@@ -50,7 +51,7 @@ const Proyectos = () => {
           url: "/projects/zonatech/evaluacionIa.webp"
         },
         {
-          titulo : "login",
+          titulo: "login",
           url: "/projects/zonatech/login.webp"
         },
         {
