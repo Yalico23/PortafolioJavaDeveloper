@@ -6,8 +6,8 @@ const Inicio = () => {
 
   const images = [
     { src: "/images/perfil.png", alt: "Perfil" },
-    { src: "/images/ids-cena.jfif", alt: "IDS Cena" },
-    { src: "/images/fundadores.jpg", alt: "IDS fundaores" },
+    { src: "/images/ids-cena.avif", alt: "IDS Cena" },
+    { src: "/images/fundadores.avif", alt: "IDS fundaores" },
     { src: "/images/nttdata.png", alt: "NTT Data" },
     { src: "/images/blockchain.png", alt: "Blockchain"},
   ];

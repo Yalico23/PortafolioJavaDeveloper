@@ -7,15 +7,15 @@ const certificados = () => {
   const certificados = [
     {
       nombre: "DevOps Foundation",
-      img: "/certificaciones/devops.jfif",
+      img: "/certificaciones/devops.avif",
     },
     {
       nombre: "Scrum Developer",
-      img: "/certificaciones/scrum.jfif",
+      img: "/certificaciones/scrum.avif",
     },
     {
       nombre: "Inglés",
-      img: "/certificaciones/ingles.jpg",
+      img: "/certificaciones/ingles.avif",
     }
   ]
 
