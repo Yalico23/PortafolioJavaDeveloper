@@ -1,27 +1,65 @@
-import Email from "../assets/icons/Email"
-import LinkedIn from "../assets/icons/LinkedIn"
-import WhatsApp from "../assets/icons/WhatsApp"
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
+import 'swiper/swiper-bundle.css';
 
-const Contactame = () => {
+const certificados = () => {
+
+  const certificados = [
+    {
+      nombre: "DevOps Foundation",
+      img: "/certificaciones/devops.jfif",
+    },
+    {
+      nombre: "Scrum Developer",
+      img: "/certificaciones/scrum.jfif",
+    },
+    {
+      nombre: "Inglés",
+      img: "/certificaciones/ingles.jpg",
+    }
+  ]
+
   return (
     <>
-      <div>
-        <h2 className="text-4xl mb-5">Contáctame</h2>
-        <p>Si deseas más información, no dudes en contactarme.</p>
-        <div className="">
-          <a href="https://www.linkedin.com/in/oscar-yalico" target="_blank" rel="noopener noreferrer">
-            <LinkedIn className="text-[#5d656d] inline-block size-16" />
-          </a>
-          <a href="https://wa.me/51941077834?text=Hola%20Oscar%2C%20vi%20tu%20perfil%20como%20desarrollador%20de%20software%20y%20me%20gustar%C3%ADa%20coordinar%20una%20entrevista%20contigo.%20%C2%BFEst%C3%A1s%20disponible%3F" target="_blank" rel="noopener noreferrer">
-            <WhatsApp className="text-[#5d656d] inline-block size-16" />
-          </a>
-          <a href="mailto:jeanpiero_23_01@hotmail.com?subject=Interesado%20en%20tus%20servicios%20de%20desarrollo&body=Hola%20Oscar%2C%20vi%20tu%20perfil%20y%20me%20gustar%C3%ADa%20conversar%20contigo%20sobre%20un%20proyecto%20de%20software.%20%C2%BFCu%C3%A1les%20son%20tus%20disponibilidades%3F">
-            <Email className="text-[#5d656d] inline-block size-16" />
-          </a>
+      <div className="h-full flex flex-col items-center justify-evenly">
+        <h2 className="text-4xl py-3">Certificaciones</h2>
+        <div className="w-full max-w-2xl">
+          <Swiper
+            modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+            spaceBetween={30}
+            slidesPerView={1}
+            navigation
+            pagination={{
+              clickable: true,
+              dynamicBullets: true
+            }}
+            scrollbar={{ draggable: true }}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
+            loop={true}
+            onSwiper={(swiper) => console.log(swiper)}
+            onSlideChange={() => console.log('slide change')}
+            className="my-swiper"
+          >
+            {certificados.map((image) => (
+              <SwiperSlide key={image.nombre} className='slide-content'>
+                <div className="flex justify-center items-center h-full">
+                  <img
+                    src={image.img}
+                    alt={image.nombre}
+                    className="h-96 z-10 object-cover object-right fade-radial"
+                  />
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
+
       </div>
     </>
   )
 }
 
-export default Contactame
+export default certificados

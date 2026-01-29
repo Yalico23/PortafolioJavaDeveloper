@@ -6,8 +6,10 @@ const Inicio = () => {
 
   const images = [
     { src: "/images/perfil.png", alt: "Perfil" },
+    { src: "/images/ids-cena.jfif", alt: "IDS Cena" },
+    { src: "/images/fundadores.jpg", alt: "IDS fundaores" },
     { src: "/images/nttdata.png", alt: "NTT Data" },
-    { src: "/images/blockchain.png", alt: "Blockchain" }
+    { src: "/images/blockchain.png", alt: "Blockchain"},
   ];
 
   return (
@@ -15,7 +17,7 @@ const Inicio = () => {
       <div className="flex flex-col items-center h-full justify-evenly">
         <h2 className="text-2xl font-bold mb-4">¿Quién soy?</h2>
         <p className="text-center max-w-4xl px-4 mb-6">
-          Actualmente soy estudiante de ingeniería de sistemas en último ciclo, enfocado en desarrollo con Spring y React, enfocado en diseño en microservicios. Participo en workshops y conferencias para mejorar mis habilidades y aprender de otros profesionales en el campo.
+          Actualmente soy egresado de la carrera de ingeniería de sistemas, enfocado en desarrollo con Spring y su ecosistema, enfocado en diseño en microservicios. Participo en workshops y conferencias para mejorar mis habilidades y aprender de otros profesionales en el campo.
         </p>
 
         <div className="w-full max-w-2xl">

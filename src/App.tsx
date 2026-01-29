@@ -3,6 +3,9 @@ import { NavLink } from 'react-router-dom';
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import Preload2 from "./components/Preload2";
+import LinkedIn from "./assets/icons/LinkedIn";
+import WhatsApp from "./assets/icons/WhatsApp";
+import Email from "./assets/icons/Email";
 
 const App = () => {
 
@@ -14,7 +17,7 @@ const App = () => {
     { to: "/habilidades", label: "Habilidades y Tecnologías" },
     { to: "/proyectos", label: "Proyectos" },
     { to: "/experiencia", label: "Experiencia" },
-    { to: "/contactame", label: "Contáctame" }
+    { to: "/certificados", label: "Certificados" }
   ];
 
   useEffect(() => {
@@ -66,6 +69,15 @@ const App = () => {
                   </NavLink>
                 </li>
               ))}
+              <li className="pt-5"><a href="https://www.linkedin.com/in/oscar-yalico" target="_blank" rel="noopener noreferrer" className="flex hover:text-blue-600 transition-all duration-150">
+                <LinkedIn /> <span className="px-3">LinkedIn</span>
+              </a></li>
+              <li><a href="https://www.linkedin.com/in/oscar-yalico" target="_blank" rel="noopener noreferrer" className="flex hover:text-green-600 transition-all duration-150">
+                <WhatsApp /> <span className="px-3">WhatsApp</span>
+              </a></li>
+              <li><a href="mailto:jeanpiero_23_01@hotmail.com?subject=Interesado%20en%20tus%20servicios%20de%20desarrollo&body=Hola%20Oscar%2C%20vi%20tu%20perfil%20y%20me%20gustar%C3%ADa%20conversar%20contigo%20sobre%20un%20proyecto%20de%20software.%20%C2%BFCu%C3%A1les%20son%20tus%20disponibilidades%3F" className="flex hover:text-gray-600 transition-all duration-150">
+                <Email /> <span className="px-3">Email</span>
+              </a></li>
             </ul>
           </aside>
           <section className="w-full p-5 h-full overflow-y-auto" id="section">

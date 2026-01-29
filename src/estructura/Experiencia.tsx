@@ -4,6 +4,14 @@ const Experiencia = () => {
   const experiencia = [
     {
       id: 1,
+      fecha: "Septiembre 2025 - Actualidad",
+      titulo: "Cells Developer",
+      tipoContrato: "Remoto",
+      empresa: "IDS Comercial TI - BBVA",
+      descripcion: "Como Cells Developer, trabajé dentro de un marco ágil basado en Scrum, participando activamente en ceremonias como dailies, refinamientos y retrospectivas. Mi rol incluía el análisis y resolución de incidencias y bugs dentro del software, asegurando que cada corrección mantuviera la calidad del producto y no afectara otras funcionalidades del sistema."
+    },
+    {
+      id: 2,
       fecha: "Abril 2025 - Julio 2025",
       titulo: "Desarrollador de back-end Java - React",
       tipoContrato: "Prácticas pre-profesionales",
@@ -11,7 +19,7 @@ const Experiencia = () => {
       descripcion: "Contruccion de ApiRest con Spring y React con integración de inteligencia Artificial y servicios en la nube con AWS."
     },
     {
-      id: 2,
+      id: 3,
       fecha: "Enero 2024 - Marzo 2025",
       titulo: "Desarrollador de software",
       tipoContrato: "Proyecto",
