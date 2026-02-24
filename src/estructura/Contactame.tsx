@@ -4,7 +4,12 @@ import 'swiper/swiper-bundle.css';
 
 const certificados = () => {
 
-  const certificados = [
+  type certificate = {
+    nombre:string;
+    img:string;
+  }
+
+  const certificados : certificate[] = [
     {
       nombre: "DevOps Foundation",
       img: "/certificaciones/devops.avif",
@@ -16,6 +21,10 @@ const certificados = () => {
     {
       nombre: "Inglés",
       img: "/certificaciones/ingles.avif",
+    },
+    {
+      nombre: "Kanban Essentials",
+      img: "/certificaciones/kanban.avif"
     }
   ]
 
