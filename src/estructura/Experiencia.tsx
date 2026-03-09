@@ -17,14 +17,6 @@ const Experiencia = () => {
       tipoContrato: "Prácticas pre-profesionales",
       empresa: "ZonaTech Perú",
       descripcion: "Contruccion de ApiRest con Spring y React con integración de inteligencia Artificial y servicios en la nube con AWS."
-    },
-    {
-      id: 3,
-      fecha: "Enero 2024 - Marzo 2025",
-      titulo: "Desarrollador de software",
-      tipoContrato: "Proyecto",
-      empresa: "HRF GROUP S.A.C",
-      descripcion: "Se desarrolló un software con integración de servicios en la nube y automatización para entrevistas laborales."
     }
   ]
 
